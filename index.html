@@ -19,31 +19,19 @@
 
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
-<!-- Icons -->
-<link rel="icon" href="./icons/favicon.ico">
-<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
-  
-<!-- Preload Fonts -->
+  <!-- Hero Image Preload -->
+<link
+rel="preload"
+as="image"
+href="./images/bubble-wall-living-room-1376.webp"
+imagesrcset="
+./images/bubble-wall-living-room-768.webp 768w,
+./images/bubble-wall-living-room-1024.webp 1024w,
+./images/bubble-wall-living-room-1376.webp 1376w"
+imagesizes="(min-width: 1376px) 1376px, 100vw"
+type="image/webp">
 
-<link rel="preload"
-href="./fonts/roboto-v51-latin-regular.woff2"
-as="font"
-type="font/woff2"
-crossorigin>
-
-<link rel="preload"
-href="./fonts/roboto-v51-latin-500.woff2"
-as="font"
-type="font/woff2"
-crossorigin>
-
-<link rel="preload"
-href="./fonts/roboto-v51-latin-700.woff2"
-as="font"
-type="font/woff2"
-crossorigin>
-
-<!-- Styles -->
+  <!-- Styles -->
 <link rel="stylesheet" href="./main.css">
 
 <!-- Structured Data -->
@@ -116,6 +104,23 @@ Contact Us
 </section>
 
 <section id="home-content">
+
+  <section class="hero">
+
+  <img
+    src="./images/bubble-wall-living-room-1024.webp"
+    srcset="
+      ./images/bubble-wall-living-room-768.webp 768w,
+      ./images/bubble-wall-living-room-1024.webp 1024w,
+      ./images/bubble-wall-living-room-1376.webp 1376w"
+    sizes="(min-width: 1376px) 1376px, 100vw"
+    alt="Water bubble wall installation in modern living room"
+    fetchpriority="high"
+    width="1376"
+    height="768"
+    decoding="async">
+
+  </section>
 
 <!-- Home Content -->
 
