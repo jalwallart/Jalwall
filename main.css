@@ -18,3 +18,47 @@
   align-items: center;
   justify-content: flex-start;
 }
+
+/* ===== HERO LAYOUT (MD3 spacing) ===== */
+
+.hero{
+  padding: 32px 20px 40px;
+}
+
+/* paragraphs */
+
+.hero p{
+  margin-top: 24px;
+}
+
+/* CTA spacing */
+
+.hero .cta{
+  margin-top: 32px;
+}
+
+/* bullet list container */
+
+.hero-points{
+  list-style: none;
+  margin-top: 32px;
+  padding: 0;
+}
+
+/* bullet rows */
+
+.hero-points li{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 16px;
+}
+
+/* icon */
+
+.hero-points img{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
