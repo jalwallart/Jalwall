@@ -108,9 +108,9 @@ background:#ffffff;
 
 display:flex;
 flex-direction:column;
-align-items:flex-end;
+align-items:flex-start
 
-padding:0px 0px;
+padding:0px 16px;
 
 transform:translateY(-10px);
 opacity:0;
