@@ -6,10 +6,10 @@ menuToggle.addEventListener('click', () => {
 menuToggle.classList.toggle('active')
 nav.classList.toggle('active')
 
-})
+});
 
 
-document.querySelectorAll('.cta-primary').forEach(button => {
+document.querySelectorAll('.cta').forEach(button => {
 
   button.addEventListener('click', function(e){
 
