@@ -1,148 +1,147 @@
 /* CTA Button */
 
 .cta {
-  
+
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 100%;
+  width: 100%;
 
-  height: 48px;
+  height: 48px;
 
-  background: linear-gradient(
-  180deg,
-  #0a0a0a 0%,
-  #000000 100%
+  background: linear-gradient(
+  180deg,
+  #0a0a0a 0%,
+  #000000 100%
 );
-   
-  color: #fff;
+   
+  color: #fff;
 
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.35px;
-  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  text-decoration: none;
 
-  border-radius: 999px;
-  
-  overflow: hidden;
+  border-radius: 999px;
+  
+  overflow: hidden;
 
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.08),
-    inset 0 -1px 0 rgba(255,255,255,0.04),
-    0 8px 20px rgba(0,0,0,0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    inset 0 -1px 0 rgba(255,255,255,0.04),
+    0 8px 20px rgba(0,0,0,0.35);
 
-  transition:
-    transform .18s ease,
-    box-shadow .25s ease;
-
-   -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
+  transition:
+    transform .18s ease,
+    box-shadow .25s ease;
 
 }
 
-.cta::before
+.cta::before {
 
-  content: "";
+  content: "";
 
-  position: absolute;
+  position: absolute;
 
-  inset: -4px;
+  inset: -4px;
 
-  border-radius: inherit;
+  border-radius: inherit;
 
-  background: linear-gradient(
-    90deg,
-    #ff0066,
-    #ff00cc,
-    #7a00ff,
-    #0066ff,
-    #00e5ff,
-    #ff0066
-  );
+  background: linear-gradient(
+    90deg,
+    #ff0066,
+    #ff00cc,
+    #7a00ff,
+    #0066ff,
+    #00e5ff,
+    #ff0066
+  );
 
-  background-size: 300% 300%;
+  background-size: 300% 300%;
 
-  animation: cta-ring 2.5s linear infinite;
+  animation: cta-ring 2.5s linear infinite;
 
-  z-index: 0;
+  z-index: 0;
 
 }
 
-.cta::after
+.cta::after {
 
-  content: "";
+  content: "";
 
-  position: absolute;
+  position: absolute;
 
-  inset: 4px;
+  inset: 4px;
 
-  background: #000;
+  background: #000;
 
-  border-radius: inherit;
+  border-radius: inherit;
 
-  z-index: 1;
+  z-index: 1;
 
 }
 
 .cta-text {
 
-  position: relative;
+  position: relative;
 
-  z-index: 3;
+  z-index: 3;
 
 }
 
 .cta-ripple {
 
-  position: absolute;
+  position: absolute;
 
-  border-radius: 50%;
+  border-radius: 50%;
 
-  background: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.35);
 
-  transform: scale(0);
+  transform: scale(0);
 
-  animation: ripple-animation 600ms ease-out;
+  animation: ripple-animation 600ms ease-out;
 
-  pointer-events: none;
+  pointer-events: none;
 
-  z-index: 2;
+  z-index: 2;
 
 }
 
 .cta:hover {
 
-  transform: scale(1.03);
+  transform: scale(1.03);
 
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.12),
-    inset 0 -1px 0 rgba(255,255,255,0.06),
-    0 14px 32px rgba(0,0,0,0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.12),
+    inset 0 -1px 0 rgba(255,255,255,0.06),
+    0 14px 32px rgba(0,0,0,0.55);
 
 }
 
 .cta:active {
 
-  transform: scale(0.96);
+  transform: scale(0.96);
 
 }
 
 @keyframes cta-ring {
 
-  0% { background-position: 0% 50%; }
+  0% { background-position: 0% 50%; }
 
-  100% { background-position: 200% 50%; }
+  100% { background-position: 200% 50%; }
 
 }
 
 @keyframes ripple-animation {
 
-  to {
+  to {
 
-    transform: scale(4);
+    transform: scale(4);
 
-    opacity: 0;
+    opacity: 0;
 
   }
+
+}
