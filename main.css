@@ -1,1 +1,89 @@
-2
+/* ===== Reset (browser normalization only) ===== */
+
+*,*::before,*::after{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+
+/* ===== Header Component ===== */
+
+.site-header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:0 24px;
+
+background:#ffffff;
+
+z-index:1000;
+}
+
+
+/* ===== Logo ===== */
+
+.logo{
+display:flex;
+align-items:center;
+height:100%;
+}
+
+.logo img{
+height:40%;
+width:auto;
+display:block;
+}
+
+
+/* ===== Hamburger Button ===== */
+
+.menu-toggle{
+width:40px;
+height:40px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:5px;
+
+background:none;
+border:none;
+
+cursor:pointer;
+}
+
+
+/* ===== Hamburger Bars ===== */
+
+.menu-toggle span{
+width:24px;
+height:2px;
+
+background:#000;
+
+transition:transform .25s ease, opacity .2s ease;
+}
+
+
+/* ===== Hamburger Animation ===== */
+
+.menu-toggle.active span:nth-child(1){
+transform:translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+transform:translateY(-7px) rotate(-45deg);
+}
