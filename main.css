@@ -19,35 +19,32 @@
   justify-content: flex-start;
 }
 
-/* ===== HERO CONTENT SPACING (MD3 mobile grid) ===== */
+/* ===== HERO CONTENT (MD3 mobile layout) ===== */
 
-/* paragraphs */
-
-.hero p{
-  margin-top: 16px;
+.hero-content{
   padding-left: 16px;
   padding-right: 16px;
+}
+
+/* paragraph rhythm */
+
+.hero-content p{
+  margin-top: 16px;
   text-align: left;
 }
 
-/* CTA */
+/* CTA spacing */
 
-.hero .cta{
+.hero-content .cta{
   margin-top: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 /* bullet list */
 
 .hero-points{
   list-style: none;
-
   margin-top: 24px;
-  padding-left: 16px;
-  padding-right: 16px;
-
-  text-align: left;
+  padding: 0;
 }
 
 /* bullet rows */
@@ -55,13 +52,11 @@
 .hero-points li{
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 12px;
-
   margin-top: 16px;
 }
 
-/* icon */
+/* bullet icon */
 
 .hero-points img{
   width: 24px;
