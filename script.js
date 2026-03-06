@@ -36,4 +36,16 @@ document.querySelectorAll('.cta').forEach(button => {
 
   });
 
+  button.addEventListener('click', function(e){
+
+    const url = button.getAttribute('href');
+
+    e.preventDefault();
+
+    setTimeout(() => {
+      window.open(url, "_blank");
+    }, 220);
+
+  });
+
 });
