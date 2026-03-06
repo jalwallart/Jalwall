@@ -27,6 +27,7 @@
   margin-top: 16px;
   padding-left: 16px;
   padding-right: 16px;
+  text-align: left;
 }
 
 /* CTA */
@@ -45,6 +46,8 @@
   margin-top: 24px;
   padding-left: 16px;
   padding-right: 16px;
+
+  text-align: left;
 }
 
 /* bullet rows */
@@ -52,6 +55,7 @@
 .hero-points li{
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 12px;
 
   margin-top: 16px;
