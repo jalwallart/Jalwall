@@ -24,7 +24,7 @@
 /* paragraphs */
 
 .hero p{
-  margin-top: 24px;
+  margin-top: 16px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -42,7 +42,7 @@
 .hero-points{
   list-style: none;
 
-  margin-top: 32px;
+  margin-top: 24px;
   padding-left: 16px;
   padding-right: 16px;
 }
