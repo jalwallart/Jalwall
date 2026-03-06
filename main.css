@@ -1,16 +1,1 @@
-/* ===== Reset (browser normalization only) ===== */
-
-*,*::before,*::after{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-html,
-body{
-  overflow-x:hidden;
-}
-
-*{
-  -webkit-tap-highlight-color: transparent;
-}
+.keep
