@@ -37,6 +37,10 @@
     transform .18s ease,
     box-shadow .25s ease;
 
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  touch-action: manipulation;
+
 }
 
 .cta::before {
