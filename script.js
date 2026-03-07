@@ -63,9 +63,11 @@ document.querySelectorAll('.video').forEach(video => {
     const iframe = document.createElement('iframe');
 
     iframe.src =
-      "https://www.youtube-nocookie.com/embed/" +
-      videoId +
-      "?autoplay=1&enablejsapi=1";
+  "https://www.youtube-nocookie.com/embed/" +
+  videoId +
+  "?autoplay=1&loop=1&playlist=" +
+  videoId +
+  "&modestbranding=1&rel=0&playsinline=1&enablejsapi=1";
 
     iframe.title = "YouTube video player";
 
