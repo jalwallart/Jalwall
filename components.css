@@ -160,6 +160,7 @@
 
   border-radius: 16px;
   overflow: hidden;
+  contain: layout paint;
 }
 
 /* thumbnail */
