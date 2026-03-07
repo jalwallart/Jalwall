@@ -1,0 +1,80 @@
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
+
+.site-footer{
+  padding-inline:16px;
+  padding-block:32px 24px;
+}
+
+
+/* paragraph rhythm */
+
+.site-footer p{
+  margin-top:16px;
+}
+
+
+/* location style */
+
+.site-footer em{
+  font-style:italic;
+}
+
+
+/* ================================================= */
+/* CONTACT ROWS */
+/* ================================================= */
+
+.footer-contact p{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  margin-top:20px;
+}
+
+
+/* icons */
+
+.footer-icon{
+  width:24px;
+  height:24px;
+  flex-shrink:0;
+}
+
+
+/* links */
+
+.footer-contact a{
+  text-decoration:underline;
+}
+
+
+/* ================================================= */
+/* SOCIAL ICONS */
+/* ================================================= */
+
+.footer-social{
+  display:flex;
+  gap:20px;
+
+  margin-top:24px;
+}
+
+.footer-social img{
+  width:28px;
+  height:28px;
+}
+
+
+/* ================================================= */
+/* COPYRIGHT */
+/* ================================================= */
+
+.footer-copyright{
+  margin-top:32px;
+  padding-top:24px;
+
+  border-top:1px solid rgba(0,0,0,0.08);
+}
