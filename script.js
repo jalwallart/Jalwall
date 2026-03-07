@@ -50,11 +50,44 @@ document.querySelectorAll('.cta').forEach(button => {
 
 });
 
+let youtubePreconnected = false;
+
+function warmYoutubeConnections(){
+
+  if(youtubePreconnected) return;
+
+  youtubePreconnected = true;
+
+  const domains = [
+    "https://www.youtube-nocookie.com",
+    "https://i.ytimg.com"
+  ];
+
+  domains.forEach(domain => {
+
+    const link = document.createElement("link");
+
+    link.rel = "preconnect";
+    link.href = domain;
+    link.crossOrigin = "";
+
+    document.head.appendChild(link);
+
+  });
+
+}
+
 document.querySelectorAll('.video').forEach(video => {
 
-  video.addEventListener('pointerdown', () => {
+  const playButton = video.querySelector('.video-play');
+
+  playButton.addEventListener('pointerdown', (event) => {
+
+    event.stopPropagation();
 
     if (video.dataset.loaded) return;
+
+    warmYoutubeConnections();   // NEW
 
     video.dataset.loaded = "true";
 
@@ -63,11 +96,11 @@ document.querySelectorAll('.video').forEach(video => {
     const iframe = document.createElement('iframe');
 
     iframe.src =
-  "https://www.youtube-nocookie.com/embed/" +
-  videoId +
-  "?autoplay=1&loop=1&playlist=" +
-  videoId +
-  "&modestbranding=1&rel=0&playsinline=1&enablejsapi=1";
+      "https://www.youtube-nocookie.com/embed/" +
+      videoId +
+      "?autoplay=1&loop=1&playlist=" +
+      videoId +
+      "&playsinline=1&enablejsapi=1";
 
     iframe.title = "YouTube video player";
 
@@ -76,15 +109,11 @@ document.querySelectorAll('.video').forEach(video => {
 
     iframe.allowFullscreen = true;
 
-    iframe.loading = "lazy";
-
-    /* critical fix */
-
-    iframe.style.position = "absolute";
-    iframe.style.inset = "0";
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.border = "0";
+
+    video.innerHTML = "";
 
     video.appendChild(iframe);
 
