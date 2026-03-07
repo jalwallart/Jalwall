@@ -2,9 +2,8 @@
 
 section{
   padding-block: 32px;
+  padding-inline: 16px;
 }
-
-/* divider between sections */
 
 section + section{
   border-top: 1px solid rgba(0,0,0,0.08);
