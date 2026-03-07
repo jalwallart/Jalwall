@@ -89,39 +89,41 @@ section + section::before{
   flex-shrink: 0;
 }
 
+/* ===== HOME VIDEO SECTIONS ===== */
 
-/* =================================================
-   HOME SECTION 2
-   ================================================= */
-
-.homes-video{
+.homes-video,
+.business-video{
   padding-inline: 16px;
 }
 
 
 /* video spacing */
 
-.homes-video .video{
+.homes-video .video,
+.business-video .video{
   margin-top: 24px;
 }
 
 
 /* heading spacing */
 
-.homes-video h2{
+.homes-video h2,
+.business-video h2{
   margin-top: 24px;
 }
 
 
 /* paragraph spacing */
 
-.homes-video p{
+.homes-video p,
+.business-video p{
   margin-top: 16px;
 }
 
 
 /* CTA spacing */
 
-.homes-video .cta{
+.homes-video .cta,
+.business-video .cta{
   margin-top: 24px;
 }
