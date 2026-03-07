@@ -1,12 +1,10 @@
-/* ===== SECTION LAYOUT ===== */
-
-section{
-  padding-block: 32px;
-  padding-inline: 16px;
-}
-
-section + section{
-  border-top: 1px solid rgba(0,0,0,0.08);
+section + section::before{
+  content: "";
+  display: block;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  height: 1px;
+  background: rgba(0,0,0,0.08);
 }
 
 /* ===== HERO MEDIA ===== */
