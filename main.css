@@ -1,13 +1,20 @@
+/* =================================================
+   SECTION DIVIDER SYSTEM
+   ================================================= */
+
 section + section::before{
   content: "";
   display: block;
   width: calc(100% - 32px);
-  margin: 0 auto;
+  margin: 32px auto;
   height: 1px;
   background: rgba(0,0,0,0.08);
 }
 
-/* ===== HERO MEDIA ===== */
+
+/* =================================================
+   HERO MEDIA
+   ================================================= */
 
 .hero-media{
   position: relative;
@@ -28,12 +35,15 @@ section + section::before{
   justify-content: flex-start;
 }
 
-/* ===== HERO CONTENT (MD3 mobile layout) ===== */
+
+/* =================================================
+   HERO CONTENT (mobile layout grid)
+   ================================================= */
 
 .hero-content{
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-inline: 16px;
 }
+
 
 /* paragraph rhythm */
 
@@ -42,19 +52,24 @@ section + section::before{
   text-align: left;
 }
 
+
 /* CTA spacing */
 
 .hero-content .cta{
   margin-top: 32px;
 }
 
-/* bullet list */
+
+/* =================================================
+   HERO BULLET LIST
+   ================================================= */
 
 .hero-points{
   list-style: none;
   margin-top: 24px;
   padding: 0;
 }
+
 
 /* bullet rows */
 
@@ -65,6 +80,7 @@ section + section::before{
   margin-top: 16px;
 }
 
+
 /* bullet icon */
 
 .hero-points img{
@@ -73,43 +89,39 @@ section + section::before{
   flex-shrink: 0;
 }
 
-/* ===== HOME SECTION 2 ===== */
+
+/* =================================================
+   HOME SECTION 2
+   ================================================= */
 
 .homes-video{
-
-  padding-left:16px;
-  padding-right:16px;
-
+  padding-inline: 16px;
 }
+
 
 /* video spacing */
 
 .homes-video .video{
-
-  margin-top:24px;
-
+  margin-top: 24px;
 }
 
-/* heading */
+
+/* heading spacing */
 
 .homes-video h2{
-
-  margin-top:24px;
-
+  margin-top: 24px;
 }
 
-/* paragraph */
+
+/* paragraph spacing */
 
 .homes-video p{
-
-  margin-top:16px;
-
+  margin-top: 16px;
 }
 
-/* CTA */
+
+/* CTA spacing */
 
 .homes-video .cta{
-
-  margin-top:24px;
-
+  margin-top: 24px;
 }
