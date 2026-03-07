@@ -1,99 +1,99 @@
-/* =================================================
-   SECTION DIVIDER SYSTEM
-   ================================================= */
+/* ===== SECTION DIVIDER ===== */
 
 section + section::before{
-  content: "";
-  display: block;
-  width: calc(100% - 32px);
-  margin: 32px auto;
-  height: 1px;
-  background: rgba(0,0,0,0.08);
+  content:"";
+  display:block;
+
+  width:calc(100% - 32px);
+  margin:0 auto;
+
+  height:1px;
+  background:rgba(0,0,0,0.08);
 }
 
 
-/* =================================================
-   HERO MEDIA
-   ================================================= */
+/* ================================================= */
+/* HERO MEDIA (already implemented - unchanged) */
+/* ================================================= */
 
 .hero-media{
-  position: relative;
+  position:relative;
 }
 
 .hero-media img{
-  width: 100%;
-  height: auto;
-  display: block;
+  width:100%;
+  height:auto;
+  display:block;
 }
 
 .hero-media h1{
-  position: absolute;
-  inset: 0;
+  position:absolute;
+  inset:0;
 
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
 }
 
 
-/* =================================================
-   HERO CONTENT (mobile layout grid)
-   ================================================= */
+/* ================================================= */
+/* HERO CONTENT */
+/* ================================================= */
 
 .hero-content{
-  padding-inline: 16px;
+  padding-inline:16px;
 }
-
 
 /* paragraph rhythm */
 
 .hero-content p{
-  margin-top: 16px;
-  text-align: left;
+  margin-top:16px;
+  text-align:left;
 }
-
 
 /* CTA spacing */
 
 .hero-content .cta{
-  margin-top: 32px;
+  margin-top:24px;
 }
 
 
-/* =================================================
-   HERO BULLET LIST
-   ================================================= */
+/* ================================================= */
+/* BULLET LIST SYSTEM */
+/* ================================================= */
 
-.hero-points{
-  list-style: none;
-  margin-top: 24px;
-  padding: 0;
+.hero-points,
+.why-points{
+  list-style:none;
+  padding:0;
+  margin-top:24px;
+}
+
+.hero-points li,
+.why-points li{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  margin-top:16px;
+}
+
+.hero-points img,
+.why-points img{
+  width:24px;
+  height:24px;
+  flex-shrink:0;
 }
 
 
-/* bullet rows */
-
-.hero-points li{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 16px;
-}
-
-
-/* bullet icon */
-
-.hero-points img{
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-}
-
-/* ===== HOME VIDEO SECTIONS ===== */
+/* ================================================= */
+/* CONTENT SECTIONS */
+/* ================================================= */
 
 .homes-video,
-.business-video{
-  padding-inline: 16px;
+.business-video,
+.why-bubble{
+  padding-inline:16px;
 }
 
 
@@ -101,35 +101,35 @@ section + section::before{
 
 .homes-video .video,
 .business-video .video{
-  margin-top: 24px;
+  margin-top:24px;
 }
 
 
 /* heading spacing */
 
 .homes-video h2,
-.business-video h2{
-  margin-top: 24px;
+.business-video h2,
+.why-bubble h2{
+  margin-top:24px;
 }
 
 
 /* paragraph spacing */
 
 .homes-video p,
-.business-video p{
-  margin-top: 16px;
+.business-video p,
+.why-bubble p{
+  margin-top:16px;
 }
 
 
 /* CTA spacing */
 
 .homes-video .cta,
-.business-video .cta{
-  margin-top: 24px;
+.business-video .cta,
+.why-bubble .cta{
+  margin-top:24px;
 }
-
-
-
 
 /* ===== FAQ SECTION ===== */
 
