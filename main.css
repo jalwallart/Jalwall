@@ -127,3 +127,93 @@ section + section::before{
 .business-video .cta{
   margin-top: 24px;
 }
+
+
+
+
+/* ===== FAQ SECTION ===== */
+
+.faq{
+  padding-inline:16px;
+}
+
+
+/* intro spacing */
+
+.faq h2{
+  margin-top:24px;
+}
+
+.faq > p{
+  margin-top:16px;
+}
+
+
+/* faq items */
+
+.faq-item{
+  margin-top:24px;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+  padding-bottom:16px;
+}
+
+
+/* question row */
+
+.faq-question{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  cursor:pointer;
+  list-style:none;
+}
+
+
+/* remove default marker */
+
+.faq-question::-webkit-details-marker{
+  display:none;
+}
+
+
+/* chevron icon */
+
+.faq-icon{
+  width:24px;
+  height:24px;
+
+  transition:transform .25s ease;
+}
+
+
+/* rotate when open */
+
+.faq-item[open] .faq-icon{
+  transform:rotate(180deg);
+}
+
+
+/* answer text */
+
+.faq-item p{
+  margin-top:12px;
+}
+
+
+/* smooth reveal animation */
+
+.faq-item[open] p{
+  animation:faqReveal .25s ease;
+}
+
+@keyframes faqReveal{
+  from{
+    opacity:0;
+    transform:translateY(-4px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
