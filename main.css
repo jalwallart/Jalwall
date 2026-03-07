@@ -86,3 +86,44 @@ section::after{
   height: 24px;
   flex-shrink: 0;
 }
+
+/* ===== HOME SECTION 2 ===== */
+
+.homes-video{
+
+  padding-left:16px;
+  padding-right:16px;
+
+}
+
+/* video spacing */
+
+.homes-video .video{
+
+  margin-top:24px;
+
+}
+
+/* heading */
+
+.homes-video h2{
+
+  margin-top:24px;
+
+}
+
+/* paragraph */
+
+.homes-video p{
+
+  margin-top:16px;
+
+}
+
+/* CTA */
+
+.homes-video .cta{
+
+  margin-top:24px;
+
+}
