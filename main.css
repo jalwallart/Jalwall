@@ -131,6 +131,149 @@ section + section::before{
   margin-top:24px;
 }
 
+/* =========================================
+   RESIDENTIAL HERO
+========================================= */
+
+.residential-one{
+    position: relative;
+}
+
+.residential-one img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.residential-one h1{
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-inline: 16px;
+}
+
+
+
+/* =========================================
+   RESIDENTIAL INTRO
+========================================= */
+
+.residential-two{
+    padding-inline: 16px;
+}
+
+.residential-two h2{
+    margin-top: 24px;
+}
+
+.residential-two p{
+    margin-top: 16px;
+}
+
+.residential-two .cta{
+    margin-top: 24px;
+}
+
+
+
+/* =========================================
+   RESIDENTIAL VIDEO SECTIONS
+========================================= */
+
+.residential-three,
+.residential-four{
+    padding-inline: 16px;
+}
+
+.residential-three .video,
+.residential-four .video{
+    margin-top: 24px;
+}
+
+.residential-three h2,
+.residential-four h2{
+    margin-top: 24px;
+}
+
+.residential-three p,
+.residential-four p{
+    margin-top: 16px;
+}
+
+.residential-three .cta,
+.residential-four .cta{
+    margin-top: 24px;
+}
+
+
+
+/* =========================================
+   RESIDENTIAL USE CASES
+========================================= */
+
+.residential-five{
+    padding-inline: 16px;
+}
+
+.residential-five h2{
+    margin-top: 24px;
+}
+
+.residential-five ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.residential-five li{
+    margin-top: 16px;
+}
+
+
+
+/* =========================================
+   RESIDENTIAL BENEFITS
+========================================= */
+
+.residential-six{
+    padding-inline: 16px;
+}
+
+.residential-six h2{
+    margin-top: 24px;
+}
+
+.residential-six p{
+    margin-top: 16px;
+}
+
+.residential-six ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.residential-six li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.residential-six li img{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.residential-six .cta{
+    margin-top: 32px;
+}
+
 /* ===== FAQ SECTION ===== */
 
 .faq{
