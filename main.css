@@ -182,38 +182,46 @@ margin-top:32px;
 
 /* =================================================
    RESIDENTIAL SECTION 5
-   Premium animated gradient background
+   Teal + Lavender smoke gradient
 ================================================= */
 
 .residential-five{
 
 background: linear-gradient(
-140deg,
-#fafbff,
-#eef2ff,
-#f7f9ff,
-#edf3ff,
-#fafbff
+135deg,
+#f6f9ff,
+#e8f7f5,
+#efe9ff,
+#e6f3ff,
+#f6f9ff
 );
 
-background-size:300% 300%;
+background-size:400% 400%;
 
-animation:residentialGradient 12s ease-in-out infinite;
+animation:smokeGradient 14s ease-in-out infinite;
 
 }
 
-@keyframes residentialGradient{
+@keyframes smokeGradient{
 
 0%{
-background-position:0% 40%;
+background-position:0% 50%;
+}
+
+25%{
+background-position:50% 100%;
 }
 
 50%{
-background-position:100% 60%;
+background-position:100% 50%;
+}
+
+75%{
+background-position:50% 0%;
 }
 
 100%{
-background-position:0% 40%;
+background-position:0% 50%;
 }
 
 }
