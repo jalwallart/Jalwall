@@ -81,6 +81,8 @@ margin-top:24px;
    CHECK LIST COMPONENT
 ========================================================= */
 
+/* CHECK LIST */
+
 .check-list{
 list-style:none;
 padding:0;
@@ -91,16 +93,17 @@ margin-top:24px;
 display:flex;
 align-items:center;
 gap:12px;
+}
+
+.check-list li + li{
 margin-top:16px;
 }
 
-.check-list img{
+.check-icon{
 width:24px;
 height:24px;
 flex-shrink:0;
 }
-
-
 
 /* =========================================================
    CONTENT SECTIONS
