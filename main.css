@@ -188,30 +188,32 @@ margin-top:32px;
 .residential-five{
 
 background: linear-gradient(
-120deg,
-#f6f8ff,
-#e4ecff,
-#dfe9ff,
-#f6f8ff
+140deg,
+#fafbff,
+#eef2ff,
+#f7f9ff,
+#edf3ff,
+#fafbff
 );
 
 background-size:300% 300%;
-animation:residentialGradient 9s ease-in-out infinite;
+
+animation:residentialGradient 12s ease-in-out infinite;
 
 }
 
 @keyframes residentialGradient{
 
 0%{
-background-position:0% 50%;
+background-position:0% 40%;
 }
 
 50%{
-background-position:100% 50%;
+background-position:100% 60%;
 }
 
 100%{
-background-position:0% 50%;
+background-position:0% 40%;
 }
 
 }
