@@ -110,7 +110,7 @@ flex-shrink:0;
 ========================================================= */
 
 .home-two,
-.business-video,
+.home-three,
 .why-bubble,
 .residential-two,
 .residential-three,
@@ -128,7 +128,7 @@ padding-top:24px;
 ========================================================= */
 
 .home-two .video,
-.business-video .video,
+.home-three .video,
 .residential-three .video,
 .residential-four .video{
 margin-top:24px;
