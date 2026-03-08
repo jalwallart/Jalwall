@@ -109,7 +109,7 @@ flex-shrink:0;
    CONTENT SECTIONS
 ========================================================= */
 
-.homes-video,
+.home-two,
 .business-video,
 .why-bubble,
 .residential-two,
@@ -127,7 +127,7 @@ padding-top:24px;
    VIDEO COMPONENT SPACING
 ========================================================= */
 
-.homes-video .video,
+.home-two .video,
 .business-video .video,
 .residential-three .video,
 .residential-four .video{
