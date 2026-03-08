@@ -180,6 +180,41 @@ margin-top:16px;
 margin-top:32px;
 }
 
+/* =================================================
+   RESIDENTIAL SECTION 5
+   Animated gradient background test
+================================================= */
+
+.residential-five{
+
+background: linear-gradient(
+120deg,
+#f7f9fc,
+#eef3ff,
+#f7f9fc
+);
+
+background-size:200% 200%;
+animation:residentialGradient 16s ease infinite;
+
+}
+
+@keyframes residentialGradient{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
 
 
 /* =========================================================
