@@ -20,3 +20,10 @@ display:flex;
 align-items:center;
 justify-content:flex-start;
 }
+
+/* Global section spacing */
+
+section:not(.hero-media){
+padding-inline:16px;
+padding-top:16px;
+}
