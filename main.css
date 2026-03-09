@@ -23,7 +23,7 @@ justify-content:flex-start;
 
 /* Global section spacing */
 
-section:not(.hero):not(.residential-one){
+section:not(.home-one):not(.residential-one){
 padding-inline:16px;
 padding-top:16px;
 }
