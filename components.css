@@ -209,18 +209,12 @@
 
 .check-list{
 list-style:none;
-padding:0;
-margin-top:24px;
 }
 
 .check-list li{
 display:flex;
 align-items:center;
 gap:12px;
-}
-
-.check-list li + li{
-margin-top:16px;
 }
 
 .check-icon{
